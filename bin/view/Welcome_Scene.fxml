@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Welcome">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox layoutX="14.0" layoutY="106.0" prefHeight="238.0" prefWidth="329.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="player1_name" alignment="CENTER" onKeyReleased="#p1exit" onKeyTyped="#p1enter" prefHeight="54.0" prefWidth="324.0" promptText="Player 1 Name" text="Player 1">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="player2_name" alignment="CENTER" onKeyReleased="#p2exit" onKeyTyped="#p2enter" prefHeight="54.0" prefWidth="324.0" promptText="Player 2 Name" text="Player 2">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="maxpoint" alignment="CENTER" onKeyReleased="#maxexit" onKeyTyped="#maxenter" prefHeight="54.0" prefWidth="324.0" promptText="Max Point" text="30">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="TOP_CENTER" layoutY="6.0" prefHeight="54.0" prefWidth="600.0">
+               <children>
+                  <ImageView fx:id="logo1" fitHeight="44.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/logo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="55.0" prefWidth="309.0" text="Dice Game">
+                     <font>
+                        <Font size="51.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="logo2" fitHeight="44.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resource/logo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox layoutX="362.0" layoutY="106.0" prefHeight="238.0" prefWidth="231.0">
+               <children>
+                  <Label fx:id="label1" alignment="TOP_LEFT" prefHeight="79.0" prefWidth="231.0" text="&lt;- Set Player 1 Name" />
+                  <Label fx:id="label2" alignment="TOP_LEFT" prefHeight="85.0" prefWidth="231.0" text="&lt;- Set Player 2 Name" />
+                  <Label fx:id="label3" alignment="TOP_LEFT" prefHeight="73.0" prefWidth="231.0" text="&lt;- Set a Max point" />
+               </children>
+            </VBox>
+            <HBox alignment="TOP_CENTER" layoutY="346.0" prefHeight="54.0" prefWidth="600.0" spacing="100.0">
+               <children>
+                  <Button fx:id="rulebutton" mnemonicParsing="false" onAction="#rulebuttonpressed" text="Rules">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="playbutton" mnemonicParsing="false" onAction="#playgame" text="Play!">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="helpbutton" layoutX="186.0" layoutY="10.0" mnemonicParsing="false" onAction="#helpbuttonpressed" text="Help">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

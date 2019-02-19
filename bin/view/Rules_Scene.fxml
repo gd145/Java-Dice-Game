@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="435.0" prefWidth="622.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.Rules">
+   <children>
+      <Button fx:id="next" layoutX="445.0" layoutY="376.0" mnemonicParsing="false" onAction="#nextButtonPressed" prefHeight="45.0" prefWidth="167.0" text="Next" />
+      <Label layoutX="280.0" layoutY="14.0" text="Rules">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="14.0" layoutY="376.0" mnemonicParsing="false" onAction="#backButtonPressed" prefHeight="45.0" prefWidth="167.0" text="Back" />
+      <VBox layoutY="66.0" prefHeight="278.0" prefWidth="622.0" spacing="30.0">
+         <children>
+            <Label fx:id="des1" alignment="CENTER" prefHeight="57.0" prefWidth="622.0" text="label" textAlignment="CENTER" />
+            <Label fx:id="des2" alignment="CENTER" prefHeight="57.0" prefWidth="622.0" text="label" textAlignment="CENTER" />
+            <Label fx:id="des3" alignment="CENTER" prefHeight="57.0" prefWidth="622.0" text="label" textAlignment="CENTER" />
+         </children>
+      </VBox>
+      <VBox layoutX="5.0" layoutY="58.0" prefHeight="294.0" prefWidth="622.0" spacing="30.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="629.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="213.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="pic1" fitHeight="57.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="pic2" fitHeight="57.0" fitWidth="63.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="pic3" fitHeight="57.0" fitWidth="63.0" layoutX="73.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="rule1" text="Label" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="629.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="213.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="pic4" fitHeight="57.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="pic5" fitHeight="57.0" fitWidth="63.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="pic6" fitHeight="57.0" fitWidth="63.0" layoutX="73.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </HBox>
+                  <Label fx:id="rule2" text="Label" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="629.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="213.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="pic7" fitHeight="57.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="pic8" fitHeight="57.0" fitWidth="63.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="pic9" fitHeight="57.0" fitWidth="63.0" layoutX="73.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="rule3" text="Label" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

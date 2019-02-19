@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.HelpandDocumentation">
+  <children>
+    <Label layoutX="269.0" layoutY="45.0" text="Help">
+      <font>
+        <Font size="30.0" />
+      </font>
+    </Label>
+    <VBox layoutX="14.0" layoutY="92.0" prefHeight="99.0" prefWidth="572.0">
+      <children>
+        <HBox prefHeight="40.0" prefWidth="572.0">
+          <children>
+            <Label fx:id="help1" minHeight="-1.0" prefHeight="-1.0" text="Label" />
+          </children>
+        </HBox>
+        <Label fx:id="help2" text="Label" />
+      </children>
+    </VBox>
+    <Label id="help2" fx:id="help3" layoutX="14.0" layoutY="213.0" text="Label" />
+    <Label id="help3" fx:id="help4" layoutX="14.0" layoutY="287.0" text="Label" />
+  </children>
+</AnchorPane>
